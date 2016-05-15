@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+APP="poll_bot"
+
+LINK_SYS_CONFIG=/etc/poll_bot.config
+
+BUILD_HOST="bothub.colharris.com"
+BUILD_USER="root"
+BUILD_AT="/git/poll_bot/builds"
+RELEASE_DIR="/git/poll_bot/builds/rel/poll_bot"
+
+STAGING_HOSTS="bothub.colharris.com"
+STAGING_USER="git"
+TEST_AT="/test/poll_bot"
+
+PRODUCTION_HOSTS="bothub.colharris.com"
+PRODUCTION_USER="root"
+DELIVER_TO="/opt/poll_bot"
+
+RELEASE_STORE=s3://$AWS_ACCESS_KEY_ID@$AWS_SECRET_ACCESS_KEY:poll-bot-releases
